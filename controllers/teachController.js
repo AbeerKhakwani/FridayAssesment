@@ -6,7 +6,7 @@
 	  var newName= $scope.newName;
 	  $scope.studentFactory.addStudents(newName);
 	  $scope.newName=null;
-	  //$state.go('viewStudents');
+	  $state.go('viewStudents');
 
 	};
 });
