@@ -1,12 +1,16 @@
 signIn.controller('signInCtrl', function signInCtrl($scope, studentFactory){
-	
-  var name ="Abeer Khakwani";
+
+
   $scope.studentFactory=studentFactory;
-  $scope.studentFactory.addStudents(name);
-  $scope.studentFactory.addStudents("June Bug");
-  $scope.studentFactory.addStudents("Jane Doe");
- 
+
+
   $scope.students= studentFactory.students;
+$scope.studentFactory.addStudents("June Bug");
+$scope.studentFactory.addStudents("Jane Doe");
+$scope.studentFactory.addStudents("Erica Cha");
+$scope.studentFactory.addStudents("Kelly De Vries");
+
+
   $scope.studentSignIn=function(item){
           item.isSigned=true;
   };
@@ -15,5 +19,5 @@ signIn.controller('signInCtrl', function signInCtrl($scope, studentFactory){
           item.isSigned=false;
   };
 
-  
+
 });

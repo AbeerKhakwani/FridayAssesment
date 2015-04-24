@@ -4,6 +4,8 @@ signIn.factory('studentFactory', function studentFactory(){
    factory.addStudents= function(name){
       factory.students.push({name:name , isSigned:false});
    };
+
+
    return factory
 
 });
